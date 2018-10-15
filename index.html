@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harry Potter Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div id ="container">
+    <header>
+        <h1>Harry Potter Quiz!!</h1> 
+        <p>Test you knowledge, in a race against the clock trival game!!</p>
+    </header>
+    <br>
+    <section onload="startTimer();">
+        <div id="time"></div>
+        <!-- <div id ="container-2">
+
+             <div id ="timeRemaining">
+                 
+             </div>
+
+             <i class="fas fa-hourglass-end"></i>
+
+             <div id ="Results"></div>
+       
+        </div> -->
+
+        <form name="quizForm" onsubmit="return submitAnswers()">
+            <h3>Which pets are students NOT allowed to have in Hogwarts?</h3>
+            <input type="radio" name="q1" value="a" id="r1a"> a. Toad <br>
+            <input type="radio" name="q1" value="b" id="r1b"> b. Cat <br>
+            <input type="radio" name="q1" value="c" id="r1c"> c. Dog <br>
+            <input type="radio" name="q1" value="d" id="r1d"> d. Owl <br>
+            <br>
+            <h3>What is the Spell used to unlock doors?</h3>
+            <input type="radio" name="q2" value="a" id="r2a"> a. Lumos <br>
+            <input type="radio" name="q2" value="b" id="r2b"> b. Avada Kedavra <br>
+            <input type="radio" name="q2" value="c" id="r2c"> c. Wingardium Leviosa <br>
+            <input type="radio" name="q2" value="d" id="r2d"> d. Alohomora <br>
+            <br>
+            <h3>What is Hermione's patronus?</h3>
+            <input type="radio" name="q3" value="a" id="r3a"> a. Dragon <br>
+            <input type="radio" name="q3" value="b" id="r3b"> b. Bunny <br>
+            <input type="radio" name="q3" value="c" id="r3c"> c. Otter <br>
+            <input type="radio" name="q3" value="d" id="r3d"> d. Deer <br>
+            <br>
+            <h3>What is Professor McGonagall's first name?</h3>
+            <input type="radio" name="q4" value="a" id="r4a"> a. Minerva <br>
+            <input type="radio" name="q4" value="b" id="r4b"> b. Lucy <br>
+            <input type="radio" name="q4" value="c" id="r4c"> c. Wendy <br>
+            <input type="radio" name="q4" value="d" id="r4d"> d. Luna <br>
+            <br>
+            <h3>Which is NOT a Deathly Hallows?</h3>
+            <input type="radio" name="q5" value="a" id="r5a"> a. Elder Wand <br>
+            <input type="radio" name="q5" value="b" id="r5b"> b. Sword of Gryffindor <br>
+            <input type="radio" name="q5" value="c" id="r5c"> c. Invisibility Cloak <br>
+            <input type="radio" name="q5" value="d" id="r5d"> d. Resurrection Stone <br>
+            <br><br>
+
+            <input type="submit" value="Submit Answers">
+
+        </form>
+    </section>
+    </div>
+<div id="after_submit">
+    <p id="number_correct"></p>
+
+</div>
+    
+</body>
+
+<script type="text/javascript" src="assests/javascript/game.js"></script>
+
+</html>
